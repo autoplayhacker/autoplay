@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Autoplay Hacker</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+ 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+ 
+ <!-- slider -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.2/flexslider.css">
+<link rel="stylesheet" href="css/flex.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.2/jquery.flexslider.js"></script>
+ <!--Fin slider -->
+ 
+ 
+<style>
+        
+ 
+    * {
+	box-sizing: border-box;
+  }
+
+
+
+
+/*  contenido inicio tarjetas*/
+ 
+
+   .bloque{
+   background-color: ;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-color1: darkgray;
+        }
+        
+  
+  
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+     
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #150405;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+        /* For mobile phones: */
+@media screen and (max-width: 990px) {
+}
+ 
+    
+    
+    
+    
+    
+    
+    
+	
+
+
+
+	
+	
+	
+		/* CARDS */
+	
+
+.container-0{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: auto;
+    margin: 30px auto;
+}
+
+.box{
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+}
+.box:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h3{
+    
+    text-align: center;
+    color: rgb(104, 92, 92);
+		 
+
+}
+p{
+    font-size: 15px;
+  
+	padding: 0 5px;
+    color: rgb(104, 92, 92);
+	 margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and(max-width: 360px){
+    .container-0{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+		justify-content: center;
+    }
+}
+@media (max-width: 712px){
+    .container-0{
+        width: 85%;
+        display: block;
+        flex-wrap: wrap;
+    }
+  
+    
+}
+    @media (max-width: 768px){
+    .container-0{
+        width: 80%;
+        display: block;
+		flex-wrap: wrap;
+    }
+    .box{
+        width: 80%;
+        margin-bottom: 4%;
+    }
+}
+    
+        
+    </style>
+
+ 
+ 
+</head>
+
+<body>
+  <!-- ======= boton facebook ======= -->
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0&appId=687119033280144&autoLogAppEvents=1" nonce="5bJliHK5"></script>
+
+ <!-- ======= fin boton facebook ======= -->
+
+
+
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">Autoplay Hacker</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="About.html">About us</a></li>
+          
+ 
+          
+      
+		  
+          <li class="dropdown"><a href="#"><span>Linux</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+               
+			  <li><a href="apache.html">How to configure apache server</a></li>
+			  
+             </li>
+              <li><a href="botnet.html">Crear tu propia BOTNET (spanish) </a></li>
+              
+              <li><a href="dnsen.html">What is DnsEnum</a></li>
+              <li><a href="commandl.html">Linux security commands</a></li>
+              <li><a href="anonym8.html">Anonym8</a></li>
+              <li><a href="dig.html">Hacking Dns Lookup With Dig</a></li>
+              <li><a href="etico.html">Hacking ético con MetaSploit(spanish))</a></li>
+              <li><a href="iptablas.html">Comando iptables en Linux (spanish))</a></li>
+              <li><a href="linux-commands.html">Linux commands</a></li>
+              <li><a href="mitmf.html">Ataques en redes IPv4 (spanish)</a></li>
+              <li><a href="networkco.html">Linux Networking Commands</a></li>
+            </ul>
+			
+			
+			
+			<!-- ======= Descargas ======= -->
+			
+			<li class="dropdown"><a href="#"><span>Security</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+			  
+			  <li><a href="lynis.html">Security Auditing</a></li>
+			  	
+              </li>
+              <li><a href="malware.html">What is malware? </a></li>
+              <li><a href="pass.html">Using John The Ripper</a></li>
+              <li><a href="phi.html">¿Qué es phishing? (spanish)</a></li>
+              <li><a href="secu.html">Seguridad informática (spanish)</a></li>
+              <li><a href="wpa2.html">Wifi / WPA2 usando Reaver (spanish)</a></li>
+              <li><a href="threats.html">Threats web</a></li>
+            </ul>
+			
+           	<li class="dropdown"><a href="#"><span>Repair</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+			  
+			  <li><a href="usb.html">Dysfunctional USB Port</a></li>
+			  	
+              </li>
+              <li><a href="ram8.html">Memory ram fix</a></li>
+              <li><a href=".html"></a></li>
+              <li><a href=".html"></a></li>
+              <li><a href=".html"></a></li>
+              
+            </ul>
+			
+           	<li class="dropdown"><a href="#"><span>Electronic</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+			  
+			  <li><a href="module.html">Power bank module</a></li>
+			  	
+              </li>
+              <li><a href="arduino.html"></a></li>
+              <li><a href=".html"></a></li>
+              <li><a href=".html"></a></li>
+         
+            </ul>
+			
+           
+				
+			
+			
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+
+
+
+      <div class="header-social-links d-flex align-items-center">
+        <a href="https://twitter.com/?lang=en" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/AutoplayPc" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/autoplayhacker/"" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section y Slaider======= -->
+  <!-- <section id="hero1" class="d-flex flex-column justify-content-center align-items-center"> -->
+  
+<!--	Comienzo slider-->
+    
+	<!-- @zone - hightlighted -->
+<!--Showshow-->
+<div class="container slider-container">
+   <div class="row">
+      <div class="col-md-12 slider-left">
+         <section class="flexslider-wrapper">
+            <div id="main-slider" class="flexslider" data-transition="fade" data-page-class="slider-full-width">
+               <div class="slides">
+                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="assets/img/slide.jpg">
+                     <div class="slide-caption">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="slide-text">
+                                 <div class="slide-title">This is Slide #1</div>
+                                 This is text for the first slide.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="assets/img/slide1.png">
+                     <div class="slide-caption">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="slide-text">
+                                 <div class="slide-title">This is Slide #2</div>
+                                 This is text for the second slide.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="assets/img/slide2.jpg">
+                     <div class="slide-caption">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="slide-text">
+                                 <div class="slide-title">This is Slide #2</div>
+                                 This is text for the second slide.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+				  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="assets/img/slide3.jpg">
+                     <div class="slide-caption">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="slide-text">
+                                 <div class="slide-title">This is Slide #2</div>
+                                 This is text for the second slide.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="assets/img/slide4.png">
+                     <div class="slide-caption">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="slide-text">
+                                 <div class="slide-title">This is Slide #2</div>
+                                 This is text for the second slide.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="assets/img/slide5.jpg">
+                     <div class="slide-caption">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="slide-text">
+                                 <div class="slide-title">This is Slide #3</div>
+                                 This is text for the third slide.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </section>
+         </div>
+      </div>
+   </div>
+</div>
+
+	
+	
+	
+  
+  <!-- </section> -->
+  <!-- End Hero -->
+  <!-- End slider -->
+
+
+
+
+
+<!-- Comienzo -->
+
+  <main id="main">
+
+    <!-- ======= What We Do Section ======= -->
+    <section id="what-we-do" class="what-we-do">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Wellcome</h2>
+          <p>A look at the computer world and electronics.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-file-earmark-pdf"></i></div>
+              <h4><a href="">Tutorials</a></h4>
+              <p>Manuals books magazines and videos on computer electronics and more.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-server"></i></div>
+              <h4><a href="">security</a></h4>
+              <p>Safety articles and tips in the office, devices and in general.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-archive-fill"></i></div>
+              <h4><a href="">Linux</a></h4>
+              <p>
+Command line, pentesting applications and more.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End What We Do Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/site.png" class="img-fluid" alt="">
+				 
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>Find us in Facebook</h3>
+            <p>
+         Find us on Facebook where you will find content about, linux commands, pentesting tools, windows, databases, electronics, and more.
+	
+	<div class="fb-like" data-href="https://www.facebook.com/AutoplayPc" data-width="" data-layout="button_count" data-action="" data-size="" data-share="true"></div>
+
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> Share with other followers.</li>
+              <li><i class="bx bx-check-double"></i> Leave us your opinion, ask about a project.</li>
+            </ul>
+            <div class="row icon-boxes">
+              <div class="col-md-6">
+                <i class="bi bi-instagram"></i>
+                <h4> Instagram</h4>
+          <p> Images, commands, notifications about our publications and more. </p>
+        <a href="https://www.instagram.com/autoplayhacker/" button type="button" class="btn btn-primary btn-sm">Link site</button></a>
+		 
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <i class="bi bi-youtube"></i>
+                <h4>Youtube</h4>
+                <p>Find video tutorials and more.</p>
+				        <a href="https://www.youtube.com/channel/UCqZz82djpSo-Vja3Jx9m2pA" button type="button" class="btn btn-primary btn-sm">Link site</button></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+                                         
+                                         
+ <!-- End About Section -->
+
+	  
+	  
+	  
+	  
+	  
+    <!-- ======= Skills Section ======= -->
+	  
+	  
+	  
+    <section id="skills" class="skills">
+                                       
+           <img src="" width="" height="" alt=""/> </section>
+                           <!-- End Skills Section -->                        
+   
+    <!-- ======= Counts Section ======= -->
+
+         <!--    contenido inicio tarjetas-->
+    <h2 class="text-center">Video Game and Technologies</h2>.   
+	
+	
+    <div class="bloque">
+      
+ <div class="card">
+        <div class="face front">
+            <img class="img-fluid" src="assets/img/rally.jpg" alt="">
+            <h3>Games</h3>
+        </div>
+        <div class="face back">
+            <h3>Games Xbox</h3>
+            <p>Dirt Rally is more than just the best Codemasters rally game to date; it’s arguably the best racing game Codemasters has produced in at least a decade. </p>
+            <div class="link">
+                <a href="https://www.ign.com/games/dirt-rally">Link</a>
+            </div>
+        </div>
+        </div> <div class="card">
+        <div class="face front">
+            <img class="img-fluid" src="assets/img/nvidia.jpg" alt="">
+            <h3>Cards</h3>
+        </div>
+        <div class="face back">
+            <h3>Technologies</h3>
+            <p>The NVIDIA RTX™ 5000 Ada Generation GPU, powered by the NVIDIA Ada Lovelace architecture, unlocks breakthroughs in generative AI and delivers the performance required to meet the challenges of today’s professional workflows. </p>
+            <div class="link">
+                <a href="https://www.nvidia.com/en-us/design-visualization/rtx-5000/">Link</a>
+            </div>
+        </div>
+        </div>
+                           
+         <div class="card">
+        <div class="face front">
+            <img class="img-fluid" src="assets/img/modu.jpg" alt="">
+            <h3>Modules</h3>
+        </div>
+        <div class="face back">
+            <h3>Arduino</h3>
+            <p>The Arduino WiFi Shield connects your Arduino to the internet wirelessly. Connect it to your wireless network by following a few simple instructions to start controlling your world through the internet. </p>
+            <div class="link">
+                <a href="https://docs.arduino.cc/retired/shields/arduino-wifi-shield">Link</a>
+            </div>
+        </div>
+    </div>
+ 
+    </div>
+                                   
+                                       
+    <!-- End Counts Section -->
+	
+    <!-- contenido titulos -->
+	<section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src=".jpg" class="" alt="">
+          </div> <div class="col-lg-6">
+            <img src=".jpg" class="" alt="">
+          </div>
+         
+        </div>
+
+      </div>
+    </section>
+  
+                                       
+    <!-- End titulos -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Recover lost data, software installation, web form design and more.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-usb-drive"></i>
+              <h4><a href="#">Data recovery              </a></h4>
+              <p>Is your drive malfunctioning? Not many things can disrupt an individuals life or work quite like your files becoming suddenly inaccessible. Whether you are working on business, medical data, school work, or creative projects, continuing on without your data is unimaginable. </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-pc-display-horizontal"></i>
+              <h4><a href="#">Computer repair <br>
+              </a></h4>
+              <p>Service solutions to meet the needs of Corporate, Small Business and Home customers. Services include laptop/desktop repairs, recovering lost data to removing all variants of viruses, we do it all.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-bluetooth"></i>
+              <h4><a href="#">Network solutions <br>
+              </a></h4>
+              <p>Home Wi-Fi Setup &amp; Wireless Networking ,Wifi router installation </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-card-image"></i>
+              <h4><a href="">Web design</a></h4>
+              <p>We offer professional web design services at affordable rates to help your business attract more visitors. </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-tools"></i>
+              <h4><a href="#">Electronic</a></h4>
+              <p>Electronic services for all students and clients of educational services. Forms and instructions for electronic services. Arduino ,app android.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-windows"></i>
+              <h4><a href="#">Operating System Installation Service</a></h4>
+              <p>Drivers, applications and updates must be located and installed correctly for your computer to function properly. If you need to install Windows OS 7, 8.1 or 10 on your your laptop/pc, you can choose this category.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+	
+	
+	
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Programs & app</h2>
+          <p>Applications, programs, linux and programming</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Wifi</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Linux</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+
+
+        
+		  
+		  
+  <!--   cuadro 1 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="assets/img/portfolio/maba3.jpg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/maba3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="moba.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="moba.html">MobaXterm</a></h4>
+                <p>Application</p>
+              </div>
+            </div>
+          </div>
+
+  <!--   cuadro 2 -->
+
+      
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="assets/img/portfolio/wir2.png" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/wir1.png" class="link-preview portfolio-lightbox1" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="wire.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="wire.html">Wireshark</a></h4>
+                <p>Network </p>
+              </div>
+            </div>
+          </div>
+
+  <!--   cuadro 3-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="assets/img/portfolio/ardu1.jpg" class="img-fluid" alt="">
+                <a href="assets/img/portfolio/ardu3.jpg" class="link-preview portfolio-lightbox1" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="arduino.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="arduino.html">Arduino</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+      
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+	
+	
+    <!-- ======= cards ======= -->
+
+                    <div class="section-title">
+          <h2>
+News and Links</h2>
+          <p>Technologies, events and updates</p>
+        </div>                                  
+                                                    
+               
+<div class="container-0">
+
+ 
+      <div class="box">
+	 
+        <img src="assets/img/ps4.jpg" />
+
+        <h5>Connect a PS4 DualShock 4 Controller to a PC</h5>
+        <p>The PlayStation 4's DualShock 4 controller is a fantastic gamepad, and with some tinkering you can get it to work with your PC. The DualShock 4 is a great controller, but it's designed specifically for the Sony PlayStation 4. That means, at least on paper, that it's not meant to be used with PC games.</p>
+          <a href="https://www.pcmag.com/how-to/how-to-use-a-ps4-dualshock-4-controller-on-a-pc" class="btn btn-primary mx-auto d-block" role="button">Link</a>	    
+      </div>
+     
+      <div class="box">
+        <img src="assets/img/w11.png" />
+        <h5>Microsoft Windows 11 Review News</h5>
+        <p>
+        With Windows 11, Microsoft boldly changes up its market-leading desktop operating system, giving it a new look featuring a centered Taskbar, rounded window corners, and new translucent textures. Windows 11 is more streamlined and easier to navigate with a touchscreen, with bigger touch zones.</p>
+		<a href="https://news.microsoft.com/windows-11-2022-update/" class="btn btn-primary mx-auto d-block" role="button">Link</a>
+	 
+      </div>
+      <div class="box">
+        <img src="assets/img/iphone.jpg" />
+        <h5>iPhone 15: Release Date, Rumors, and Specs</h5>
+        <p>
+         The iPhone 15 is nearly here, with the Apple September Event happening on September 12. Apple hasn’t released much in the way of official details about its next best smartphone, but a glut of leaks, analyst predictions and insider speculations has given us an inkling of what to expect.
+        </p>
+      <a href="https://www.ign.com/articles/iphone-15-everything-we-know" class="btn btn-primary mx-auto d-block" role="button">Link</a>
+	
+		
+      </div>
+   
+	 
+    </div>
+            <!-- ======= fin cards ======= -->                            
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+
+    <!-- ======= Team Section ======= -->
+ 
+    <!-- End Team Section -->
+
+
+	<!-- ======= acerca de mi ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Contact us</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/avatar.webp" alt="">
+              <h4>Gabriel Briceño</h4>
+              <span>Web developer</span>
+              <p>
+            Senior computer technician, electronics and computer repair technician and follower of new technologies.
+              </p>
+              <div class="social">
+                <a href="https://twitter.com/?lang=en"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/AutoplayPc"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/autoplayhacker/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End acerca -->
+
+
+
+<!-- Facebook -->
+<a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
+  ><i class="fab fa-facebook-f"></i
+></a>
+
+<!-- Facebook -->
+<i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
+
+<!-- Twitter -->
+<i class="fab fa-twitter fa-2x" style="color: #55acee;"></i>
+
+<!-- Google -->
+<i class="fab fa-google fa-2x" style="color: #dd4b39;"></i>
+
+
+
+<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-user"></span></button>
+<button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon glyphicon-stats"></span></button>
+<button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-ok"></span></button>
+<button type="button" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-comment"></span></button>
+<button type="button" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-envelope"></span></button>
+<button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove"></span></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg"></section>
+	
+	<!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+           <div class="col-lg-3 col-md-6 footer-contact">
+         
+            <p> 
+                <img class="log" src="assets/img/logo.png" >
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.metasploit.com/">Metasploit</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/">Github</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.kali.org/">Kali Linux</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://latam.kaspersky.com/">kaspersky</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://laravel.com/">Laravel</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Files and more</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="files.html">Download</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Products</a></li>
+          
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Register your email send your comments.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Autoplay Hacker</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        
+         
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/?lang=en" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/AutoplayPc" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/autoplayhacker/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  
+  
+  <!-- Slaider -->
+  <script>
+$(document).ready(function () {
+if (jQuery().flexslider) {
+    //flexslider ticker
+    $('.flexslider-ticker').each(function() {
+      var tickerSettings =  {
+        animation: "slide",
+        animationLoop: false,
+        selector: ".items > .item",
+        move: 1,
+        controlNav: false,
+        slideshow: true,
+        direction: 'vertical'
+      };
+      $(this).flexslider(tickerSettings);
+    });
+
+    // flexsliders
+    $('.flexslider').each(function() {
+      var sliderSettings =  {
+        animation: $(this).attr('data-transition'),
+        selector: ".slides > .slide",
+        controlNav: false,
+        smoothHeight: true,
+        prevText: "",
+        nextText: "",
+        sync: $(this).data('slidernav') || '',
+        start: function(slider) {
+          if (slider.find('[data-slide-bg-stretch=true]').length > 0) {
+            slider.find('[data-slide-bg-stretch=true]').each(function() {
+              if ($(this).data('slide-bg')) {
+                $(this).backstretch($(this).data('slide-bg'));
+                // $(this).data('slide-bg');
+              }
+            });
+          }
+        }
+      };
+      
+      $('html').addClass('has-flexslider');
+      $(this).flexslider(sliderSettings);
+    });
+    $(window).delay(1000).trigger('resize'); //make sure height is right load assets loaded
+}})
+</script> 
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</body>
+
+</html>
