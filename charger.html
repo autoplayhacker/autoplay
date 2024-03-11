@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Charger</title>
+     <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  
+    <link rel="stylesheet" type="text/css" href="css/pagina.css">
+    
+     <style>
+
+       
+                  </style>
+         
+            
+  
+            
+    
+
+</head>
+<body>
+ <!--  <div class="header">
+  <h2><a href="index.html">Cybersecurity</a></h2>
+  <h4>News / Tools</h4>
+</div>-->
+ 
+    
+          <!-- ======= Hero Section ======= -->
+  <section id="hero" class="">
+ 
+     
+<h1><span></span></h1>
+      <h2></h2>
+    
+  </section><!-- End Hero -->
+    
+    
+    
+    
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.homemade-circuits.com/make-this-power-bank-circuit-using-37v/" target="_blank">Power Bank Circuits for Mobile Phones</a></li>
+      <li><a href="https://www.kali.org/" target="_blank">Kali linux</a></li>
+      <li><a href="https://www.microbattery.com/battery-charging-guide" target="_blank">Practical guide to charging batteries by chemistry</a></li> <li><a href="https://www.literoflightusa.org/how-to-make-a-solar-battery-charger/" target="_blank">Solar Battery Charger</a></li> <li><a href="https://www.cei.washington.edu/research/energy-storage/lithium-ion-battery/" target="_blank">What is a lithium-ion battery</a></li>
+    
+    </ul>
+  </div>
+	
+    
+    
+    
+  <div class="col-6 col-s-9">
+    <h2><span id="1_How_to_Make_Battery_Charger_at_Home_6_Steps_with_Pictures_Instructables">How To Make Battery Charger</span>    </h2>
+    <p>There are so many different types of batteries, and nowadays we need them to operate a whole range of items, from <a href="https://www.uetechnologies.com/how-to-check-apple-tv-remote-battery/" data-wpel-link="internal">tv remote controls</a> to cars and motorcycles. However, the problem is, when they run out of charge, we need to recharge them, and chargers can be expensive.</p>
+    <p>However, for those who don&rsquo;t mind a bit of circuitry and electronics DIY, there is another way, since it&rsquo;s quite possible to make one yourself – and for anyone who wants to try, here are 23 great plans for how to make a battery charger you might like to try copying at home.</p>
+    <h2>Charging batteries in electronic devices</h2>
+    <p>The nominal voltage of NiMH and NiCd batteries is about 1.2 V/cell, and they usually should be charged up to 1.5V to 1.6 V per cell. Delta temperature (dT/dt), temperature threshold, peak voltage detection, negative delta voltage, and simple timers are among the methods used to determine when to stop charging NiMH and NiCd batteries. For more critical applications, one or more can be combined in a single charger.</p>
+    <p>Peak voltage detection is used in the constant current regulator (CCR) battery charging circuit shown below. Using a peak voltage detection point of 1.5 V/cell will result in charging to about 97% of full capacity for NiMH and NiCd batteries.</p>
+    <p>Discharge voltage vs capacity:</p>
+    <p><img class="img0" src="images/pc/nimh.png" width="400" height="260" alt=""/></p>
+    <h2>General Li-ion charging considerations</h2>
+    <p>With appropriate caution, the CCR battery charger shown above could be used to charge a Li-ion battery. Li-ion batteries are often charged to 4.2 V/cell at 0.5C or less to near 1C capacity, sometimes followed by a slower charging rate. The challenge is to keep the temperature rise to under 5°C. A higher temperature during charging could lead to a catastrophic event such as fire. And the temperature of a Li-ion battery typically rises the most during the final stages of charging. This CCR controller attempts to eliminate that potential problem by not including a second, lower-rate charge stage. Eliminating the second charge stage helps to lengthen battery life in addition to helping to keep the battery operating safely. However, eliminating the second charging stage also means that the battery will only charge up to about 0.85C, or 85% of its maximum capacity.</p>
+    <p>Figure 4: Volts/capacity vs. time when charging lithium-ion .</p>
+    <p><img class="img0"src="images/pc/capacity.png" width="460" height="336" alt=""/></p>
+    <p>Unless a Li-ion battery is charged very slowly (usually 0.15 C or even less), terminating the charge based on reaching a voltage of 4.2 V/cell will only charge the battery to a maximum of 0.7C. Some batteries may only reach 0.4C.</p>
+    <p>A simplified illustration of a typical charging circuit is shown in Fig. 1 . It consists of a voltage reference, power source, LED indicator, controller, and CCR. For a NiMH battery the nominal voltage is 1.2 V/cell and should be charged up to 1.5 V to 1.6 V/cell. There are several different techniques for determining when to terminate the charge. These include peak voltage detection, negative delta voltage, delta temperature (dT/dt), temperature threshold and timers. For high end chargers these may be all combined together. For a CCR charger, a peak voltage detecting circuit is employed – which terminates the charging process when a predetermined peak voltage has been reached.</p>
+    <p>Fig. 1: Block diagram of typical charging circuit.</p>
+    <p><img class="img0" src="images/pc/block.png" width="400" height="168" alt=""/><br>
+    </p>
+    
+    <p>In Fig. 2 the setting of the reference voltage (Vref) is shown utilizing a three-terminal programmable shunt regulator. The resistor R2 is set to 1.0 kΩ and Rref can then be adjusted to match the Vref required. The equation that describes the ratio of R2 to Rref is:</p>
+    <p>Fig. 2: Setting of reference voltage.</p>
+    <p><img class="img0" src="images/pc/vref.png" width="400" height="286" alt=""/></p>
+    <p>A single comparator is used to compare the voltage of the battery to Vref. Connected to the inverting input is the battery voltage. Hysteresis is added (see Fig. 3 ) to the set up to avoid oscillation occurring in the comparator – thus improving system performance. This is done by placing the feedback resistor Rh between the output and the non-inverting input. The 1.0 kΩ resistor R3 is used to make the ratio of R3 to Rh as simple as possible. By adjusting Rh, the bandwidth of the hysteresis loop can be changed. Increasing Rh means that the bandwidth is lowered while decreasing Rh raises the bandwidth. It is recommended that the bandwidth for the hysteresis loop should be greater than 200 mV, because when charging is terminated the voltage of the battery will drop slightly.</p>
+    <p>Fig. 3: Inclusion of hysteresis into charging circuit.</p>
+    <p><img class="img0" src="images/pc/comparator.png" width="400" height="199" alt=""/></p>
+    <p>The equations to calculate the high and low voltages of the inverting input are as follows:</p>
+    <p><img src="images/pc/detailv.png" width="250" height="58" alt=""/></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3><a href="https://www.circuits-diy.com/how-to-make-a-12v-battery-charger-at-home-diy/" jscontroller="M9mgyc" jsname="qOiK6e" jsaction="rcuQ6b:npT2md" data-ved="2ahUKEwjWyLPM7dWAAxWKRjABHRwwCK0QFnoECCIQAQ" ping="/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.circuits-diy.com/how-to-make-a-12v-battery-charger-at-home-diy/&ved=2ahUKEwjWyLPM7dWAAxWKRjABHRwwCK0QFnoECCIQAQ"> </a> Battery Charger At Home </h3>
+    <p>Circuits:</p>
+    <p>&nbsp;</p>
+    
+    
+
+    <p><img class="img0" src="images/pc/charg2.jpg" width="556" height="250" alt=""/></p>
+    <p>&nbsp;</p>
+    <p><em><strong>Share:</strong></em></p>
+    <a href="https://www.facebook.com/AutoplayPc"><img src="images/icons/face.png" width="24" height="24" ></a>
+    <a href="https://www.instagram.com/autoplayhacker/"><img src="images/icons/insta.png" width="24" height="24" ></a> <a href="https://twitter.com/?lang=en"><img src="images/icons/tw.png" width="24" height="24" ></a>
+<a href="https://www.linkedin.com/feed/"><img src="images/icons/link.png" width="24" height="24" ></a></div>
+  
+      <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Features</h2>
+      <p>Charger Module is a regulator board that is frequently used in do-it-yourself charger models. This board, which is very reliable and easy to use, has a lithium battery charge protection feature and intelligent over-temperature protection features. At the same time, this board has over-voltage, over-current, overload and short-circuit protections. While the connected battery is charging, the red warning LED on it flashes regularly, and when fully charged, the red warning LED lights up continuously. </p>
+      
+      
+    </div>
+  </div>
+    
+</div>
+
+
+
+
+
+<div class="footer">
+            &copy; Copyright <strong><span>Autoplay Hacker</span></strong>. All Rights Reserved
+
+</div>
+
+</body>
+</html>
+
+

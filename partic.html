@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Linux Networking</title>
+
+<link href="css/pagina.css" rel="stylesheet" type="text/css">
+    
+    <style>
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+    
+    
+</head>
+<body>
+
+<div class="header">
+  <img class="logo" src="images/icons/logo.png">
+<h1 id="titulo">Cybersecurity</h1></div>
+    
+  
+    
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+     <li><a class="link" href="index.html">Home</a></li>
+     <li><a class="link" href="https://www.cisco.com/site/us/en/products/security/index.html">Cisco Secure </a></li>
+     <li><a class="link" href="https://www.trendmicro.com/vinfo/us/security/definition/ransomware">Ransomware - Definition</a></li>
+     <li><a class="link" href="https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP">What is Data Loss Prevention (DLP)</a></li>
+     <li><a class="link" href="https://www.kaspersky.com/resource-center/definitions/what-is-a-vpn">What is VPN</a></li>
+     <li><a class="link" href="https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html">What Is a Firewall</a></li>  <li><a class="link" href="https://lam.norton.com/">Norton</a></li> <li><a class="link" href="https://www.kaspersky.com/resource-center/threats/spyware">What is Spyware</a></li>
+     <li><a class="link" href="">What is Spy</a></li>
+    
+    </ul>
+    </img> 
+  </div>
+	
+  <div class="col-6 col-s-9">
+    <h2>Particiones en Linux    </h2>
+    <p>Si estás utilizando una distribución de Linux tipo <em>Standard Release</em>, es decir, que cada cierto tiempo se libera una nueva versión, <strong>seguro</strong> que vas a querer <strong>cambiar de versión</strong>.</p>
+    <p>En ese caso, si no has separado<strong> /home</strong> del resto del sistema, cuando vayas a instalar una nueva versión, perderás toda esa documentación.</p>
+    <p>Además, en determinados casos es recomendable, que determinadas particiones tengan diferentes formatos de archivo. E incluso obligatorio. Asi para<strong> /boot/efi</strong>, es necesario que el sistema de archivos sea <strong>fat32</strong>. Mientras que para otras particiones como por ejemplo, /boot dependiendo de tu sistema recomienda <strong>ext2</strong>.</p>
+    <p>Actualmente, y utilizando <em>Grub2</em> es indiferente que el sistema de archivos de <strong>/boot</strong> sea <strong>ext2</strong>, <strong>ext3</strong> o <strong>ext4</strong>.</p>
+    <p>En cuanto a la memoria de intercambio, <em>Swap</em>, hasta la fecha, era necesario que fuera en una partición independiente. Actualmente, algunas distribuciones están barajando utilizar <em>un archivo</em>.</p>
+    <h3 id="esquema-recomendado-de-particionamiento">Esquema recomendado de particiones en Linux</h3>
+    <p>Una vez ya estás convencido de lo interesante que es tener tus sistema <em>repartido</em> en diferentes particiones, veamos cual es el esquema para establecer las particiones en Linux, y las razones para hacerlo. </p>
+    <h3>El esquema recomendado de particionamiento es el siguiente,    </h3>
+    <table>
+      <tr>
+        <th>Particion</th>
+        <th>Tamaño</th>
+      </tr>
+      <tr>
+        <td>Swap</td>
+        <td>=RAM</td>
+      </tr>
+      <tr>
+        <td>/boot</td>
+        <td>250 mb</td>
+      </tr>
+      <tr>
+        <td>/boot/efi</td>
+        <td>150 mb</td>
+      </tr>
+      <tr>
+        <td>Home</td>
+        <td>30 gb</td>
+      </tr><tr>
+        <td>/</td>
+        <td>∞s</td>
+      </tr>
+    </table>
+    <h3 id="swap2">Swap</h3>
+    <p>La partición swap debe ser de al menos 256 MB. Se utiliza para el caso de no disponer suficiente memoria RAM. En esos casos la información de tu sistema se guarda en la partición swap.</p>
+    <p>Antes, la cantidad de memoria SWAP estaba directamente relacionada con la cantidad de memoria RAM. Actualmente, la cantidad de memoria RAM se determina en función de la carga del sistema, y no de la memoria RAM del sistema.</p>
+    <p>En la siguiente tabla se puede encontrar la cantidad de memoria swap recomendada en función de la cantidad de memoria RAM y de si tu vas a querer hibernar el sistema. Esta <strong>recomendación</strong>, es especialmente importante en equipos con poca memoria RAM, es decir, con 1GB o menos.</p>
+    <table>
+      <tr>
+    <th>Ram</th>
+    <th>Swap</th>
+    <th>SWAP con hibernación</th>
+  </tr>
+  <tr>
+    <td>menos de 2 GB</td>
+    <td>2xRAM</td>
+    <td>3xRAM</td>
+  </tr>
+  <tr>
+    <td>Entre 2 y 8 GB</td>
+    <td>RAM</td>
+    <td>2xRAM</td>
+  </tr>
+  <tr>
+    <td>Entre 8 y 64 GB</td>
+    <td>4 GB(*) o mas</td>
+    <td>1,5xRAM</td>
+  </tr>
+  <tr>
+    <td>Mas de 64 GB</td>
+    <td>4 GB(*) o mas</td>
+    <td>No rec. hiber.</td>
+</tr>
+</table>
+    <p>En el límite entre los rangos definidos anteriormente, hay que ser conservadores. Pero desde luego, si los recursos de tu sistema lo permiten, aumentar el espacio de intercambio puede conducir a un mejor rendimiento del sistema.</p>
+    <h3 id="boot">/boot</h3>
+    <p>Aquí se encontrará el núcleo de tu sistema operativo, junto con otros archivos que se utilizan durante el proceso de arranque.</p>
+    <p>Respecto al tamaño, indicar que para la mayoría de los usuarios con 250 MB, es mas que suficiente.</p>
+    <p>Cada núcleo de Linux ocupa de forma aproximada unos 30 MB en el /boot. Debes tener en cuenta esto a la hora de dimensionar esta partición.</p>
+    <p>Solo es necesario realizar una partición para /boot en el caso de instalar un sistema RAID.</p>
+    <h3 id="_1">/</h3>
+    <p>Aquí es donde va todo nuestro sistema operativo.</p>
+    <p>Respecto al tamaño, esto dependerá de el uso que le vayas a dar a tu equipo. La recomendación de Red HAt es que sea como mínimo de 3.0 GB.</p>
+    <p>En general, yo siempre le doy un tamaño mínimo de 20 GB, aunque últimamente he incrementado esto a 30 GB. Cada vez las aplicaciones requieren mas espacio.</p>
+    <h3 id="home">/home</h3>
+    <p>Aquí es donde se almacena toda la información de los usuarios. Y aquí quiero hacer especial hincapié en que se refiere a toda la que generamos. Y es que, además de los archivos que nosotros ponemos de forma consciente, también aparecen otros, que se generan por nuestra actividad. Me refiero a los archivos de caché, miniaturas (<em>thumbnails</em>), etc, a los que me referiré posteriormente.</p>
+    <p>En lo que se refiere al tamaño, la recomendación de Red Hat es de 100 GB. Aquí dependerá, evidentemente del uso que le vayas a dar a tu dispositivo.</p>
+    <h3 id="bootefi">/boot/efi</h3>
+    <p>Los sistemas con UEFI deben de tener un tamaño de entre 50 y 150 MB. Y deben tener su propia partición, por que, tal y como hemos comentado anteriormente, necesitan un sistema de archivos específico fat32.</p>
+    <h2 id="consejos">Consejos</h2>
+    <ul>
+      <li>Cifrado. Aquellas particiones que vayan a contener <em>información sensible</em> deben estar cifrados por cuestiones de seguridad. De esta manera, evitaremos que personas ajenas puedan acceder a la información contenida en esas particiones. Por regla general deberías considerar cifrar <strong>/home</strong>, como mínimo.</li>
+      <li>El directorio /var/ lo utilizan diferentes aplicaciones, entre la que hay que destacar <strong>Apache</strong> y <strong>MariaDB</strong>. Hay que tener en cuenta este detalle a la hora de dimensionar el sistema.</li>
+      <li>En el caso de que haya diferentes usuarios es recomedable que /var/ y /tmp se encuentren en su propia partición.</li>
+      <li>En el caso de /tmp, se puede controlar realizando limpiezas programadas para evitar tener problemas con que estos directorios lleguen a ocupar demasiado espacio. Así, se pueden utilizar aplicaciones como tmpreaper que elimina aquellos archivos a los que no se ha tenido acceso durante un determinado periodo de tiempo.</li>
+      <li>Aquí también quiero hacer una especial mención a los directorios ~/.cache/thumbnails, que se puede convertir en un verdadero monstruo llegando a ocupar GB. Y lo mismo se puede decir de ~/.cache/mozilla y ~/.cache/google-chrome. Pero por razones distintas</li>
+    </ul>
+    <h3 id="swap">&nbsp;</h3>
+    <p>&nbsp;</p>
+    <p><strong>Share:</strong></p>
+<p><a href="https://www.facebook.com/AutoplayPc"><img src="images/icons/face.png" width="24" height="24" ></a> <a href="https://www.instagram.com/autoplayhacker/"><img src="images/icons/insta.png" width="24" height="24" ></a> <a href="https://twitter.com/?lang=en"><img src="images/icons/tw.png" width="24" height="24" ></a> <a href="https://www.linkedin.com/feed/"><img src="images/icons/link.png" width="24" height="24" ></a></p>
+<p>&nbsp;</p>
+  </div>
+</div>
+
+<div class="footer">
+            &copy; Copyright <strong><span>Autoplay Hacker</span></strong>. All Rights Reserved
+
+</div>
+    
+
+</body>
+</html>
+
+
